@@ -1,0 +1,69 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    margin:0;
+    padding:0;
+    color:black;
+    background-color:beige
+}
+
+.breadcrumbs ul{
+    list-style: none;
+    padding:10px;
+    background-color: antiquewhite;
+}
+
+.breadcrumbs ul li{
+    display:inline;
+    margin-right:5px;
+}
+
+.product-title{
+    tax-align:
+    color:chocolate;
+
+}
+
+.product-image img{
+    display:block;
+    margin: 0 auto;
+    max-width:100%;
+    height:auto;
+}
+
+.size option{
+
+}
+
+.product-option button{
+    background:blue;
+    color:aliceblue;
+    border:none;
+    padding:5px 10px;
+    margin-right:5px;
+    cursor:pointer;
+}
+
+.Rent by day{
+
+}
+
+.Rent by day select{
+    padding:5px;
+}
+
+.price{
+    font-size:1.2em;
+}
+
+.Pet-now{
+    background-color:brown;
+    color:aliceblue;
+    border:none;
+    padding:10px 20px;
+    cursor:pointer;
+}
+
+.product-description{
+
+}
+
