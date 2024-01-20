@@ -1,0 +1,110 @@
+#breadcrumbs ul{
+    list-style:none;
+    padding:10px;
+    background-color:aliceblue;
+}
+
+#breadcrumbs ul li{
+    display:inline;
+    margin-right:5px;
+}
+
+.product-title{
+    font-family: Avenir Next, Helvetica Neue, Helvetica, Arial, "sans-serif";
+    text-align:center;
+    color:black
+}
+
+.product-image img{
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.product-options{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.price{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.add-to-bag{
+    background-color:antiquewhite;
+    color:black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.buy-now{
+    background-color:lightskyblue;
+    color:ghostwhite;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+
+}
+
+.list{
+    font-family: Avenir Next, Helvetica Neue, Helvetica, Arial, "sans-serif";
+    color:gray;
+}
+.code-button{
+    background-color:lightskyblue;
+    color: black;
+    border: 2px;
+    padding: 20px 40px;
+    cursor: pointer;
+
+
+
+}
+.delivery-options{
+
+}
+
+
+
+.customer-reviews {
+    margin: 10px auto;
+    width: 70%;
+}
+
+.review {
+    color:gray;
+    margin-bottom: 0;
+    line-height: 1.4;
+    font-family: Avenir Next, Helvetica Neue, Helvetica, Arial, "sans-serif";
+
+}
+
+.delivery-options {
+    border-collapse: collapse;
+}
+
+.delivery-options,
+.delivery-options th,
+.delivery-options td {
+    border: 1px solid #ddd;
+}
+
+.delivery-options th,
+.delivery-options td {
+    padding: 8px;
+    text-align: left;
+}
+
+.review {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.review h3 {
+    margin-top: 0;
+}
+    
