@@ -1,0 +1,62 @@
+Test Part
+
+The logic behind this testing section is to ensure the normal operation of the E-Business Event Management System under various scenarios. We have adopted the Functional Testing approach, where different scenarios and test cases are used to verify whether the system's various functions work as expected.
+Specifically, the logic is as follows:
+Testing Scenarios: We have defined several testing scenarios, each representing a common operation or function within the system. These scenarios include creating events, registering participants, displaying loyalty points, generating event reports, and collecting feedback.
+Test Cases: Within each testing scenario, we have listed one or more specific test cases. Each test case includes input data and the expected output results.
+Test Data: We have provided specific input data examples, such as event names, dates, participant names, etc. These data serve as sample inputs for testing the system's functionality.
+Expected Results: For each test case, we have clearly defined the expected output results. These results are what we expect the system to produce given the provided input.
+Test Conclusion: Finally, we have summarized the entire testing process and drawn conclusions, indicating whether the system operates as expected after testing. In this example, we have concluded that the system performs normally in all its functions.
+
+# E-Business Event Management System Testing Documentation
+
+This document outlines the testing procedures and scenarios for the E-Business Event Management System.
+
+## Test Scenarios
+
+### Scenario 1: Creating an Event
+- Input: Event name, date, time, topic, speaker, capacity
+- Expected Outcome: Event is successfully created and added to the database.
+
+### Scenario 2: Registering a Participant
+- Input: Participant name, event ID
+- Expected Outcome: Participant is successfully registered for the event.
+
+### Scenario 3: Displaying Loyalty Points
+- Input: Customer name
+- Expected Outcome: Total loyalty points for the customer are displayed.
+
+### Scenario 4: Generating Event Report
+- Input: Event ID
+- Expected Outcome: An event report is generated with details such as event name, date, attendees, and feedback (if available).
+
+### Scenario 5: Collecting Participant Feedback
+- Input: Event ID, participant name, feedback
+- Expected Outcome: Feedback is successfully collected for the event.
+
+## Test Cases
+
+### Test Case 1: Creating an Event with Valid Input
+- Input: Event name: "Webinar on AI", date: "2024-02-15", time: "10:00 AM", topic: "Artificial Intelligence Trends", speaker: "John Doe", capacity: 50
+- Expected Outcome: Event is created successfully.
+
+### Test Case 2: Registering a Participant for an Existing Event
+- Input: Participant name: "Alice", event ID: "001"
+- Expected Outcome: Alice is registered for the event.
+
+### Test Case 3: Displaying Loyalty Points for a Customer
+- Input: Customer name: "Bob"
+- Expected Outcome: Total loyalty points for Bob are displayed.
+
+### Test Case 4: Generating an Event Report for an Existing Event
+- Input: Event ID: "001"
+- Expected Outcome: An event report is generated with details.
+
+### Test Case 5: Collecting Participant Feedback for an Existing Event
+- Input: Event ID: "001", participant name: "Eve", feedback: "Great presentation!"
+- Expected Outcome: Feedback is collected successfully.
+
+## Conclusion
+
+The E-Business Event Management System has been tested with various scenarios and test cases, and it is functioning as expected. The system handles event creation, participant registration, loyalty points display, report generation, and feedback collection effectively.
+
