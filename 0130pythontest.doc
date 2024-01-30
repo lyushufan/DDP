@@ -1,0 +1,94 @@
+# E-Business Event Management System Documentation
+
+This document provides an overview of the E-Business Event Management System, including its database structure and key development decisions.
+
+## Database Structure
+
+The E-Business Event Management System utilizes a dictionary-based database structure to store information about events. The database structure includes the following key fields:
+
+- "event_id": A unique identifier for each event.
+- "event_name": The name or title of the event.
+- "speaker": The name of the event speaker (if applicable).
+- "date": The date of the event.
+- "capacity": The maximum capacity of the event.
+- "attendees": A list of participants registered for the event.
+- "feedback": A list of feedback provided by participants (if applicable).
+
+## Key Development Decisions
+
+During the development of the system, several key decisions were made to ensure its functionality and usability:
+
+1. **Use of Dictionaries**: Dictionaries were chosen as the primary data structure for the event database due to their flexibility and ability to store structured information.
+
+2. **Modularization with Functions**: The system relies on Python functions to modularize code and enhance reusability. Each major functionality, such as event creation, registration, and report generation, is implemented as a separate function.
+
+3. **Error Handling**: The program implements an error handling mechanism to deal with invalid inputs. Here are specific instances of how it behaves:
+
+# In the create_event function, if the event ID already exists or the date format is incorrect, an error message will be printed.
+# In the modify_event function, if the event ID does not exist or the provided date format is incorrect, an error message will be printed.
+# In the register_for_event function, if the event ID does not exist or the event is already full, an error message will be printed.
+# In the display_loyalty_points function, if the customer is not found or has not registered for an event, an error message will be printed.
+# In the generate_event_report function, if the event ID does not exist, an error message will be printed.
+# In the collect_feedback function, if the event ID does not exist or the participant has not registered for the event, an error message will be printed.
+# In the main_menu function, if the user inputs an invalid option, an error message will be printed.
+
+
+4. **Text-Based User Interface**: A simple text-based user interface was created to interact with the system. This allows users to select various options from a menu.
+
+5. **Testing**: The system was tested with different scenarios and test cases to ensure its correct operation. Test scenarios included event creation, participant registration, loyalty points display, report generation, and feedback collection.
+
+## Test Scenarios
+
+### Scenario 1: Creating an Event
+- Input: Event name, date, time, topic, speaker, capacity
+- Expected Outcome: Event is successfully created and added to the database.
+
+### Scenario 2: Registering a Participant
+- Input: Participant name, event ID
+- Expected Outcome: Participant is successfully registered for the event.
+
+### Scenario 3: Displaying Loyalty Points
+- Input: Customer name
+- Expected Outcome: Total loyalty points for the customer are displayed.
+
+### Scenario 4: Generating Event Report
+- Input: Event ID
+- Expected Outcome: An event report is generated with details such as event name, date, attendees, and feedback (if available).
+
+### Scenario 5: Collecting Participant Feedback
+- Input: Event ID, participant name, feedback
+- Expected Outcome: Feedback is successfully collected for the event.
+
+## Test Cases
+
+### Test Case 1: Creating an Event with Valid Input
+- Input: Event name: "Webinar on AI", date: "2024-02-15", time: "10:00 AM", topic: "Artificial Intelligence Trends", speaker: "John Doe", capacity: 50
+- Expected Outcome: Event is created successfully.
+
+### Test Case 2: Registering a Participant for an Existing Event
+- Input: Participant name: "Alice", event ID: "001"
+- Expected Outcome: Alice is registered for the event.
+
+### Test Case 3: Displaying Loyalty Points for a Customer
+- Input: Customer name: "Bob"
+- Expected Outcome: Total loyalty points for Bob are displayed.
+
+### Test Case 4: Generating an Event Report for an Existing Event
+- Input: Event ID: "001"
+- Expected Outcome: An event report is generated with details.
+
+### Test Case 5: Collecting Participant Feedback for an Existing Event
+- Input: Event ID: "001", participant name: "Eve", feedback: "Great presentation!"
+- Expected Outcome: Feedback is collected successfully.
+
+#After completing the code and testing, a reevaluation has revealed the following issues:
+- Code Redundancy: There was a problem with code redundancy as there were two functions with the same name "create_event" in the code. It is sufficient to define one function for creating events, and this has already been addressed.
+- Error Message Handling: Although code already includes some error message handling, there is room for improvement. It is advisable to further enhance error message handling to make the code more robust. This has also been addressed in the modifications.
+
+#Areas for future improvement:
+- While the code is already relatively structured, there are still some areas for improvement. In the future, you can further modularize your code by placing related functionality into different functions to enhance maintainability.
+
+
+
+
+
